@@ -20,6 +20,7 @@ body{
 
 img{
     max-width: 100%;
+    height: auto;
     display: inline-block;
     vertical-align: middle;
 }
@@ -37,15 +38,19 @@ a{
 }
 
 .intro{
-        background-color: #EFEFEF;
+    background-color: #EFEFEF;
     font-size: 32px;
-            padding: 48px 0;
+    padding: 48px 0;
 }
 
 .info-title{
     font-size: 40px;
     color: #AE0000;
     border-bottom:3px solid #AE0000 ;
+}
+
+.info-contact li a:hover{
+    font-style: italic;
 }
 
 .period{
@@ -58,6 +63,15 @@ a{
     background-color: #000;
 }
 
+.social-icon{
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.social-icon a:hover img{
+    transform: scale(1.2);
+}
 
 /* CSS共用  */
 /* 容器 */
@@ -69,6 +83,12 @@ a{
 .w-50{
     width: 50%;
 }
+
+.w-50-gutter{
+    /* -號左右需有空格 */
+    width: calc(50% - 12px);
+}
+
 /* margin、padding推擠 */
 /* 以4px為單位 */
 
